@@ -1,0 +1,1 @@
+{"version":3,"file":"StatusError.js","sourceRoot":"","sources":["../../../src/shared/errors/StatusError.ts"],"names":[],"mappings":";;AAAA,iBAAiC,SAAQ,KAAK;IAC5C,YAAY,OAAe,EAAkB,MAAc;QACzD,KAAK,CAAC,OAAO,CAAC,CAAC;QAD4B,WAAM,GAAN,MAAM,CAAQ;IAE3D,CAAC;CACF;AAJD,8BAIC"}

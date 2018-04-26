@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "npm install",
     "precommit": "lint-staged",
     "start": "node dist/server.js",
     "dev": "nodemon --inspect=0.0.0.0:9229 dist/server.js",

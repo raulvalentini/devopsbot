@@ -6,6 +6,7 @@ import { port } from "./settings";
 // Using debug per best practise: https://expressjs.com/en/advanced/best-practice-performance.html#do-logging-correctly
 const log = debug("server");
 
+console.log('start server');
 /**
  * Get port from environment and store in Express.
  */
@@ -21,11 +22,11 @@ const server = createServer(app as any);
 server.listen(port);
 server.on("error", onError);
 server.on("listening", onListening);
+console.log('middle server ' + port);
 
 /**
  * Event listener for HTTP server "error" event.
  */
-
 function onError(error: NodeJS.ErrnoException) {
   if (error.syscall !== "listen") {
     throw error;
@@ -51,9 +52,10 @@ function onError(error: NodeJS.ErrnoException) {
 /**
  * Event listener for HTTP server "listening" event.
  */
-
+console.log('address is ' + server.address());
 function onListening() {
   const addr = server.address();
   const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
   log("Listening on " + bind);
 }
+console.log('end server');

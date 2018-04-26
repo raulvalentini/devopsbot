@@ -5,11 +5,13 @@ const http_1 = require("http");
 const app_1 = require("./app");
 const settings_1 = require("./settings");
 const log = debug("server");
+console.log('start server');
 app_1.default.set("port", settings_1.port);
 const server = http_1.createServer(app_1.default);
 server.listen(settings_1.port);
 server.on("error", onError);
 server.on("listening", onListening);
+console.log('middle server ' + settings_1.port);
 function onError(error) {
     if (error.syscall !== "listen") {
         throw error;
@@ -28,9 +30,11 @@ function onError(error) {
             throw error;
     }
 }
+console.log('address is ' + server.address());
 function onListening() {
     const addr = server.address();
     const bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
     log("Listening on " + bind);
 }
+console.log('end server');
 //# sourceMappingURL=server.js.map

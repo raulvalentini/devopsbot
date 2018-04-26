@@ -26,8 +26,7 @@ function normalizePort(val: string) {
 
   return false;
 }
-
-console.log('test rvt');
+console.log('settings start');
 
 export const appId = process.env.MICROSOFT_APP_ID;
 export const appPassword = process.env.MICROSOFT_APP_PASSWORD;
@@ -35,3 +34,4 @@ export const port = normalizePort(process.env.PORT || "3987");
 export const tableName = process.env.TABLE_NAME || "botstate";
 export const storageAccountName = process.env.STORAGE_ACCOUNT_NAME;
 export const storageAccountKey = process.env.STORAGE_ACCOUNT_KEY;
+console.log('settings end');

@@ -4,7 +4,7 @@ const botbuilder_1 = require("botbuilder");
 const botbuilder_azure_1 = require("botbuilder-azure");
 const settings_1 = require("../../settings");
 let storage;
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== "production2") {
     storage = new botbuilder_1.MemoryBotStorage();
 }
 else {

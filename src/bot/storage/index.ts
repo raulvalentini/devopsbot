@@ -8,7 +8,7 @@ import {
 
 let storage: IBotStorage;
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== "production2") {
   // In development, use in memory data storage.
   storage = new MemoryBotStorage();
 } else {

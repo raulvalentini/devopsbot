@@ -14,9 +14,10 @@ function normalizePort(val) {
     }
     return false;
 }
+console.log('test rvt');
 exports.appId = process.env.MICROSOFT_APP_ID;
 exports.appPassword = process.env.MICROSOFT_APP_PASSWORD;
-exports.port = normalizePort(process.env.PORT || "8080");
+exports.port = normalizePort(process.env.PORT || "3987");
 exports.tableName = process.env.TABLE_NAME || "botstate";
 exports.storageAccountName = process.env.STORAGE_ACCOUNT_NAME;
 exports.storageAccountKey = process.env.STORAGE_ACCOUNT_KEY;

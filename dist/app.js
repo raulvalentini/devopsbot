@@ -8,6 +8,7 @@ const StatusError_1 = require("./shared/errors/StatusError");
 const app = express();
 app.use(helmet());
 app.use(compression());
+app.disable('x-powered-by');
 app.post("/api/kp/messages", bot_1.default.listen());
 app.use((_req, _res, next) => {
     next(new StatusError_1.default("Not Found", 404));

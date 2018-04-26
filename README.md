@@ -25,4 +25,4 @@ Server start on localhost:8080
 
 ## Running jest tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the jest tests

@@ -14,8 +14,7 @@
     "lint-ts-dev": "tslint -c tslint.json -p tsconfig.lint.json -t stylish -e \"**/@types/**\" --force",
     "watch": "tsc -w",
     "security-check": "nsp check",
-    "test": "jest",
-    "postinstall": "node_modules\\typescript\\bin\\tsc -p"
+    "test": "jest"
   },
   "dependencies": {
     "botbuilder": "^3.11.0",
